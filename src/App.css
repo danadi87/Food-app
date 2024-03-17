@@ -11,6 +11,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rosybrown;
+  
 }
 .Body-ul {
   list-style-type: none;
@@ -18,4 +19,11 @@
   text-align: center;
   justify-content: space-evenly;
   display: flex;
+  font-size: 3vh;
+  font-weight: 500;
+}
+.page-link {
+  text-decoration: none;
+  color: rosybrown;
+  font-weight: 700;
 }
