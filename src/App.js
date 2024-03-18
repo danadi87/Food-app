@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import "./App.css";
 import "./About.js";
 import "./Shop.js";
@@ -21,23 +21,22 @@ function App() {
               <Link to="/">Home</Link>
             </li>
             <li className="page-link">
-              <Link to="About">About</Link>
+              <Link to="About.js">About</Link>
             </li>
             <li className="page-link">
-              <Link to="Shop">Shop</Link>
+              <Link to="Shop.js">Shop</Link>
             </li>
             <li className="page-link">
               <Link to="Contact">Contact</Link>
             </li>
           </ul>
         </div>
-        <Switch>
-          H
+        <Routes>
           <Route exact path="/" component={App} />
-          <Route path="/about" component={About} />
-          <Route path="/dashboard" component={Shop} />
-          <Route path="/dashboard" component={Contact} />
-        </Switch>
+          <Route path="/About" component={About} />
+          <Route path="/Shop" component={Shop} />
+          <Route path="/Contact" component={Contact} />
+        </Routes>
       </div>
     </Router>
   );
