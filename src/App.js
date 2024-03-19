@@ -5,8 +5,9 @@ import "./Shop.js";
 import Shop from "./Shop.js";
 import About from "./About.js";
 import Contact from "./Contact.js";
+import React from "react"; 
 
-function App() {
+export default function App() {
   return (
     <Router>
       <div>
@@ -21,13 +22,13 @@ function App() {
               <Link to="/">Home</Link>
             </li>
             <li className="page-link">
-              <Link to="About.js">About</Link>
+              <Link to="/About.js">About</Link>
             </li>
             <li className="page-link">
-              <Link to="Shop.js">Shop</Link>
+              <Link to="/Shop.js">Shop</Link>
             </li>
             <li className="page-link">
-              <Link to="Contact">Contact</Link>
+              <Link to="/Contact">Contact</Link>
             </li>
           </ul>
         </div>
@@ -41,5 +42,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
